@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2 class="h2-welcome">Welcome to </h2>
+  <h1 class="h1-title">KSJ Tecnologia</h1>
+  <p class="p-description"> <i>This</i> is an application for a programmer position please fill out the form below.</p>
+  <div id="wrapper">
+    <div id="form-container">
+      <form id="personal-info-form">
+        <fieldset>
+          <legend id="personal-info-legend"> Personal Information </legend>
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required placeholder="First Name"><br><br>
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required placeholder="Last Name"><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required placeholder="Phone"><br><br>
+
+          <label for="position">Position:</label>
+          <select id="position" name="position" required>
+            <option value="">Select a position</option>
+            <option value="frontend">Frontend Developer</option>
+            <option value="backend">Backend Developer</option>
+            <option value="fullstack">Full Stack Developer</option>
+            <option value="devops">DevOps Engineer</option>
+            <option value="another">Another</option>
+          </select>
+          <br><br>
+        </fieldset>
+    </div>
+    <!-- Form Container 2 -->
+    <div id="form-container-2">
+
+      <fieldset>
+        <legend id="additional-info-legend"> Additional Information </legend>
+        <label for="textarea">Why do you want to work as a programmer?</label>
+        <textarea id="textarea" name="textarea" required
+          placeholder="Please explain your interest in programming..."></textarea>
+        <label id="checkbox-p">What programming languages do you know?</label>
+        <textarea class="textarea" id="languages-textarea" name="languages-you-know"
+          placeholder="ex:Python, JavaScript, C++" required></textarea>
+        <label for="deadlines">How do you handle deadlines?</label>
+        <select id="deadlines" name="deadlines" required>
+          <option value="">Select an option</option>
+          <option>I deliver ahead of schedule</option>
+          <option>I deliver on time</option>
+          <option>I deliver late</option>
+          <option>I've had problems with deadlines before</option>
+        </select>
+        <label for="projects">Have you worked on programming projects before?</label>
+        <select id="projects" name="projects" required>
+          <option value="">Select an option</option>
+          <option>Yes, I have</option>
+          <option>No, I haven't</option>
+          <option>I have some experience</option>
+          <optgroup label="Other">
+            <option>I have experience in other areas</option>
+          </optgroup>
+        </select>
+        <label for="experience">How many years of programming experience do you have?</label>
+        <select id="experience" name="experience">
+          <option value="">Select an option</option>
+          <option>Less than 1 year</option>
+          <option>1-2 years</option>
+          <option>3-5 years</option>
+          <option>More than 5 years</option>
+        </select>
+      </fieldset>
+
+    </div>
+    <div id="form-container-3">
+      <fieldset>
+        <legend id="work-information"> Work Information </legend>
+        <label for="hourous-work">What is your daily hours availability?</label>
+        <select id="hourous-work" name="hourous-work" required>
+          <option value="">Select an option</option>
+          <option>Less than 4 hours</option>
+          <option>4-6 hours</option>
+          <option>6-8 hours</option>
+          <option>More than 8 hours</option>
+        </select>
+
+        <label for="work-in-teeam">Do you prefer to work in a team or alone?</label>
+        <select id="work-in-teeam" name="work-in-teeam" required>
+          <option value="">Select an option</option>
+          <option>In a team</option>
+          <option>Alone</option>
+          <option>Both</option>
+        </select>
+
+        <label for="work-envirment">What is your preferred work environment?</label>
+        <select id="work-envirment" name="work-envirment" required>
+          <option value="">Select an option</option>
+          <option>Remote</option>
+          <option>In-office</option>
+          <option>Hybrid</option>
+        </select>
+        <label for="in-English?">Do you speak English fluently?</label>
+        <select id="in-English?" name="in-English?" required>
+          <option value="">Select an option</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+          <option>Fluent</option>
+        </select>
+        <input type="submit" id="submit-button" value="submit">
+      </fieldset>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
